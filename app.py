@@ -15,7 +15,7 @@ def favicon():
 
 @app.route('/hello', methods=['POST'])
 def hello():
-   name = request.form.get('name')
+   name = request.form.get('lastname')
 
    if name:
        print('Request for hello page received with name=%s' % name)
